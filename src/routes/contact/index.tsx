@@ -1,8 +1,6 @@
-import { RouteComponentProps } from "@reach/router";
-import React from "react";
+import { RouteComponentProps } from '@reach/router';
+import React from 'react';
 
-const Contact: React.FC<RouteComponentProps> = (props) => {
-  return <>hello from contact</>;
-};
+const Contact: React.FC<RouteComponentProps> = (props) => <>hello from contact</>;
 
 export default Contact;
