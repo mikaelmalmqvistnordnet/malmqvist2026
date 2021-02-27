@@ -1,0 +1,10 @@
+.navigation {
+  padding: 12px;
+  box-sizing: content-box;
+}
+
+.navigation > a {
+  padding: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
