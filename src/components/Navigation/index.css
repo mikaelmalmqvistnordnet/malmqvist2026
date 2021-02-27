@@ -1,4 +1,4 @@
-.navigation {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,8 +7,19 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
 .navigation > a {
   padding: 0 12px;
   text-decoration: none;
-  font-weight: bold;
+}
+
+.navigation-home {
+  position: absolute;
+  left: 20px;
 }
