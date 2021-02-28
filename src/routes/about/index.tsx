@@ -11,13 +11,22 @@ const About: React.FC<RouteComponentProps> = (props) => (
     <section>
       <p>
         I’ve got about 6 years experience of web development, and have worked
-        professionally as a frontend developer for 3 years, mainly as a
+        professionally as a frontend engineer for roughly 3 years, mainly as a
         consultant. I’m also academically trained and got work experience within
         UX and interaction design. I believe this has given me as a developer
         solid understanding of concepts such as usability, information
         architecture, prototyping and accessibility.
       </p>
-      <p>Here are a few of the skills I posses:</p>
+      <p>
+        While frontend with JavaScript is my strong suit, I’ve got good
+        understanding of backend development using NodeJs and also know my way
+        around languages such as Java, C# and Python.
+      </p>
+      <p>
+        Besides technical know-how, I’ve also got experience in agile coaching
+        and project management.
+      </p>
+      <p>Here are a few skills I posses:</p>
       <span className="skill">JavaScript</span>
       <span className="skill">TypeScript</span>
       <span className="skill">React</span>
