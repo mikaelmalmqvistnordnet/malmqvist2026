@@ -10,12 +10,15 @@ import './index.css';
 function App() {
   return (
     <div className="app">
-      <Navigation />
-      <Router className="main">
-        <Home path="/" />
-        <Profile path="profile" />
-        <Contact path="contact" />
-      </Router>
+      <span className="app-background" />
+      <div className="main">
+        <Navigation />
+        <Router>
+          <Home path="/" />
+          <Profile path="profile" />
+          <Contact path="contact" />
+        </Router>
+      </div>
     </div>
   );
 }
