@@ -16,13 +16,13 @@ const Home: React.FC<RouteComponentProps> = (props) => (
         <a href="https://www.netlight.com/" target="_blank" rel="noreferrer">
           Netlight Consulting AB
         </a>{' '}
-        helping our clients build user-friendly and accessible web applications.
+        helping clients build user-friendly and accessible web applications.
       </p>
     </section>
     <section>
       <h2 aria-label="Education bio">🎓</h2>
       <p>
-        s I’ve got a bachelor’s in software engineering and a master’s in
+        I’ve got a bachelor’s in software engineering and a master’s in
         interaction design from Chalmers University of Technology.
       </p>
     </section>
