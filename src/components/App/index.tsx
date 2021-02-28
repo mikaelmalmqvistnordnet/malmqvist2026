@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router } from '@reach/router';
 import Home from '../../routes/home';
-import Profile from '../../routes/profile';
+import About from '../../routes/about';
 import Contact from '../../routes/contact';
 import Navigation from '../Navigation';
 
@@ -15,7 +15,7 @@ function App() {
         <Navigation />
         <Router>
           <Home path="/" />
-          <Profile path="profile" />
+          <About path="about" />
           <Contact path="contact" />
         </Router>
       </div>
