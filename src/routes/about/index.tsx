@@ -5,7 +5,7 @@ import React from 'react';
 
 import './index.css';
 
-const Profile: React.FC<RouteComponentProps> = (props) => (
+const About: React.FC<RouteComponentProps> = (props) => (
   <div className="page">
     <h1>About me</h1>
     <section>
@@ -42,4 +42,4 @@ const Profile: React.FC<RouteComponentProps> = (props) => (
   </div>
 );
 
-export default Profile;
+export default About;

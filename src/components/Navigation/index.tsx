@@ -9,8 +9,8 @@ const Navigation: React.FC = () => (
       <Link to="/" className="navigation-home" title="Home">
         Mikael Malmqvist
       </Link>
-      <Link to="profile" title="Profile">
-        Profile
+      <Link to="about" title="About">
+        About
       </Link>
       <Link to="contact" title="Contact">
         Contact
