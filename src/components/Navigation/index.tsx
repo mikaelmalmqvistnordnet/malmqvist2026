@@ -6,11 +6,15 @@ import './index.css';
 const Navigation: React.FC = () => (
   <header>
     <nav className="navigation">
-      <Link to="/" className="navigation-home">
+      <Link to="/" className="navigation-home" title="Home">
         Mikael Malmqvist
       </Link>
-      <Link to="profile">Profile</Link>
-      <Link to="contact">Contact</Link>
+      <Link to="profile" title="Profile">
+        Profile
+      </Link>
+      <Link to="contact" title="Contact">
+        Contact
+      </Link>
     </nav>
   </header>
 );
