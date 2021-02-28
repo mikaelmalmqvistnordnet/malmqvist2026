@@ -9,9 +9,9 @@ import './index.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navigation />
-      <Router>
+      <Router className="main">
         <Home path="/" />
         <Profile path="profile" />
         <Contact path="contact" />

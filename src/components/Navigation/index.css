@@ -14,7 +14,7 @@ header {
   width: 600px;
 }
 
-.navigation > a {
+.navigation a {
   padding: 0 12px;
   text-decoration: none;
 }
