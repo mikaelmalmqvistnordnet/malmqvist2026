@@ -1,0 +1,16 @@
+.active-indicator {
+  position: absolute;
+  border: 1px solid white;
+  bottom: -8px;
+  animation: widen 100ms ease 1 0s normal forwards;
+}
+
+@keyframes widen {
+  0% {
+    width: 10px;
+  }
+
+  100% {
+    width: 38px;
+  }
+}
