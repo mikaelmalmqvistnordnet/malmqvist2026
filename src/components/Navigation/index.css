@@ -10,16 +10,20 @@ header {
 .navigation {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 600px;
+  font-size: 13pt;
 }
 
 .navigation a {
+  position: relative;
   padding: 0 12px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation-home {
-  position: absolute;
+  position: absolute !important;
   left: 20px;
 }
