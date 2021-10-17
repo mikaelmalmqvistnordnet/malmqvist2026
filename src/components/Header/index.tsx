@@ -1,17 +1,18 @@
-import React from 'react';
 import { LocationProvider } from '@reach/router';
-
-import './index.css';
+import React from 'react';
+import avatar from '../../assets/avatar.jpg';
 import MenuLink from '../MenuLink';
 
-const Navigation: React.FC = () => (
-  <header>
-    <nav className="navigation">
+const Header: React.FC = () => (
+  <header className="flex flex-col justify-center items-center w-full py-5">
+    <img alt="" width="100" height="100" src={avatar} className="mb-2 rounded-full" />
+    <span className="text-white font-bold text-base">Mikael Malmqvist</span>
+    <nav className="flex justify-center mt-5 text-base font-light">
       <LocationProvider>
         {(locationContext) => (
           <>
-            <MenuLink to="/" className="navigation-home" title="Home">
-              Mikael Malmqvist
+            <MenuLink to="/" title="Home" active={locationContext.location.pathname === '/'}>
+              Home
             </MenuLink>
             <MenuLink
               to="about"
@@ -34,4 +35,4 @@ const Navigation: React.FC = () => (
   </header>
 );
 
-export default Navigation;
+export default Header;
