@@ -4,9 +4,19 @@
 
 @import url(//fonts.googleapis.com/css?family=Quicksand:400,700);
 
-html,
-body,
-#root {
-  margin: 0;
-  height: 100%;
+@layer base {
+  html,
+  body,
+  #root {
+    @apply m-0 h-full;
+  }
+  body {
+    @apply bg-dark-grey text-off-white bg-writing bg-no-repeat bg-top bg-cover bg-fixed backdrop-filter backdrop-blur-sm text-xl antialiased;
+  }
+  h1 {
+    @apply text-3xl font-medium my-6 pb-2 border-b border-solid border-white-0.15;
+  }
+  p {
+    @apply my-6;
+  }
 }

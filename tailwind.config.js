@@ -5,6 +5,14 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
+      colors: {
+        'dark-grey': '#1c1e21',
+        'off-white': '#f5f6f7',
+        'white-0.15': 'rgba(255, 255, 255, 0.15)',
+      },
+      backgroundImage: {
+        writing: 'url("/src/assets/me.jpg")',
+      },
       fontFamily: {
         sans: ['Quicksand', 'Work Sans', 'Verdana'],
       },
@@ -20,32 +28,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [
-    plugin(function ({ addBase, theme }) {
-      addBase({
-        body: {
-          backgroundColor: '#1c1e21',
-          backgroundImage: 'url("/src/assets/me.jpg")',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'top center',
-          backgroundSize: 'cover',
-          backgroundAttachment: 'fixed',
-          backdropFilter: 'blur(5px)',
-          fontSize: '1.2rem',
-          color: '#f5f6f7',
-          '-webkit-font-smoothing': 'antialiased',
-          '-moz-osx-font-smoothing': 'grayscale',
-        },
-        h1: {
-          fontSize: theme('fontSize.3xl'),
-          borderBottom: '1px solid rgba(255, 255, 255, 0.15)',
-          fontWeight: 500,
-          margin: '1.5rem 0',
-          paddingBottom: '0.5rem',
-        },
-        p: { margin: '1.5rem 0' },
-        a: { color: '#ffffff' },
-      });
-    }),
-  ],
+  plugins: [],
 };

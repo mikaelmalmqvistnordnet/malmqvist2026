@@ -25,6 +25,8 @@ const skills: string[] = [
   'Webpack',
   'Docker',
   'Contentful',
+  'AWS',
+  'Azure dev ops',
   'Netlify',
   'a11y',
   'i18n',
@@ -50,7 +52,7 @@ const About: React.FC<RouteComponentProps> = (props) => (
         Besides technical know-how, I’ve also got experience in agile coaching and project
         management.
       </p>
-      <p className="mt-3">Here are a few skills I posses:</p>
+      <p className="mt-3">Here are a few of the skills I posses:</p>
       {skills.map((s) => (
         <span
           className="inline-block bg-gray-200 bg-opacity-20 py-1 px-2 m-1 text-sm rounded-3xl"
