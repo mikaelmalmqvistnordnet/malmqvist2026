@@ -2,6 +2,12 @@
 
 The webpage is deployed at [https://malmqvist.it/](https://malmqvist.it/)
 
+## Deployment
+
+The website is hosted and deployed using [Netlify](https://www.netlify.com/).
+
+To build and deploy the website, simply merge your PR to the `master` branch. The CI pipeline is set up using Netlify's Github integration
+
 ## Noteworthy dependencies
 
 ### Tailwind CSS
