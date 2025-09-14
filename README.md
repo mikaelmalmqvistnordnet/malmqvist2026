@@ -1,6 +1,6 @@
 # My website
 
-The webpage is deployed at [https://malmqvist.it/](https://malmqvist.it/)
+Personal website for me
 
 ## Deployment
 
