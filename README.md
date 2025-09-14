@@ -1,27 +1,69 @@
-# My website
+# React + TypeScript + Vite
 
-Personal website for me
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Deployment
+Currently, two official plugins are available:
 
-The website is hosted and deployed using [Netlify](https://www.netlify.com/).
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-To build and deploy the website, simply merge your PR to the `master` branch. The CI pipeline is set up using Netlify's Github integration
+## Expanding the ESLint configuration
 
-## Noteworthy dependencies
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-### Tailwind CSS
+```js
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-[Tailwind CSS](https://tailwindcss.com/) is used for styling.
+      // Remove tseslint.configs.recommended and replace with this
+      ...tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
 
-Config can be found in [tailwind.config.js](tailwind.config.js)
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-### craco
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-This project uses [@craco/craco](https://github.com/gsoft-inc/craco) instead of react-scripts, as Create React App do not support overriding PostCSS configuration natively, which is needed to use Tailwind CSS properly.
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-Config can found in [craco.config.js](craco.config.js)
-
-## License
-
-The code is Copyright of Mikael Malmqvist and licensed under the MIT license
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
