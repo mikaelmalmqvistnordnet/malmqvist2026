@@ -55,6 +55,16 @@ h2 {
   line-height: 1.1;
 }
 
+h3 {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  line-height: 1;
+}
+
 .font-curly {
   font-family: 'Imperial Script', cursive;
   font-weight: 400;
@@ -62,6 +72,18 @@ h2 {
 }
 
 .font-professional {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-professional-bold {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-professional-spaced {
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-style: normal;
