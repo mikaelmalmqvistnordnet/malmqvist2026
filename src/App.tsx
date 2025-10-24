@@ -33,13 +33,6 @@ const App = () => {
         <div className="pt-8 flex justify-center gap-2">
           <h4 className="font-professional-bold subtitle">För er som reser</h4>
         </div>
-        <div className="flex flex-col pt-8 justify-center gap-2">
-          <h4 className="font-professional-bold subtitle">Önskelista</h4>
-          <p>
-            Vi önskar oss ingenting specifikt, men tar gärna emot bidrag till bröllopet eller
-            bröllopsresan
-          </p>
-        </div>
 
         {/* <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfv9QbSk11yUum8_1eOcpPFsFW0u4oHPI5py2dKYEKijEbQxg/viewform?embedded=true"
