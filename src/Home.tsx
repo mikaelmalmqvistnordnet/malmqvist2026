@@ -1,9 +1,10 @@
-import './App.css';
+import './Home.css';
 import blommor1 from './assets/blommor1.png';
 import blommor2 from './assets/blommor2.png';
 import herrgarden from './assets/herrgarden.jpg';
+import { Link } from '@tanstack/react-router';
 
-const App = () => {
+const Home = () => {
   return (
     <div className="relative w-[100vw] h-full flex justify-center">
       <div className="flex flex-col gap-2 pt-30 z-20 max-w-[400px] lg:max-w-[600px]">
@@ -24,13 +25,21 @@ const App = () => {
           </div>
         </div>
         <nav className="pt-8 flex justify-center gap-2">
-          <div className="font-bold text-gray-600">OSA</div>
+          <div className="font-bold text-gray-600">
+            <Link to="/osa">OSA</Link>
+          </div>
           <div>•</div>
-          <div className="font-bold text-gray-600">Hitta hit</div>
+          <div className="font-bold text-gray-600">
+            <Link to="/hitta-hit">Hitta hit</Link>
+          </div>
           <div>•</div>
-          <div className="font-bold text-gray-600">Kontakt</div>
+          <div className="font-bold text-gray-600">
+            <Link to="/kontakt">Kontakt</Link>
+          </div>
           <div>•</div>
-          <div className="font-bold text-gray-600">Anmäl tal</div>
+          <div className="font-bold text-gray-600">
+            <Link to="/tal">Anmäl tal</Link>
+          </div>
         </nav>
         <div className="pt-8 flex justify-center gap-2 flex-col">
           <h4 className="font-professional-bold subtitle">Info</h4>
@@ -71,4 +80,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
