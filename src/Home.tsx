@@ -6,12 +6,12 @@ import { Link } from '@tanstack/react-router';
 
 const Home = () => {
   return (
-    <div className="relative w-[100vw] h-full flex justify-center">
-      <div className="flex flex-col gap-2 pt-30 z-20 max-w-[400px] lg:max-w-[600px]">
+    <div className="w-full h-full flex justify-center overflow-x-hidden overflow-y-auto">
+      <div className="flex flex-col items-center gap-2 pt-30 z-20 md:max-w-[800px] lg:max-w-[1200px] max-w-[95%] pl-2 pr-2">
         <h2 className="font-curly">Välkommen på bröllop</h2>
-        <h1 className="font-professional-spaced text-5xl md:text-7xl">MIKAEL & ERIKA</h1>
+        <h1 className="font-professional-spaced text-4xl md:text-7xl">MIKAEL & ERIKA</h1>
         <h3 className="font-professional-spaced mt-4">25 JULI 2026</h3>
-        <div className="pt-10 flex justify-center">
+        <div className="pt-10 flex justify-center w-[400px]">
           <div className="max-w-sm rounded-md overflow-hidden shadow-lg min-h-96 bg-gray-50  border-gray-50">
             <img className="w-full" src={herrgarden} alt="Presteruds herrgård" />
             <div className="p-6">
@@ -72,7 +72,7 @@ const Home = () => {
           Loading
           </iframe> */}
       </div>
-      <div className="absolute left-0 bottom-0 justify-between w-full hidden md:flex overflow-hidden z-10">
+      <div className="absolute left-0 -bottom-0 justify-between w-full hidden md:flex overflow-hidden z-10">
         <img src={blommor2} width="400" alt="" className="-ml-30" />
         <img src={blommor1} width="400" alt="" className="-mr-20" />
       </div>
