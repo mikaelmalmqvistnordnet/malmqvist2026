@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Home.css';
 import blommor1 from './assets/blommor1.png';
 import blommor2 from './assets/blommor2.png';
@@ -5,6 +6,25 @@ import herrgarden from './assets/herrgarden.jpg';
 import { Link } from '@tanstack/react-router';
 
 const Home = () => {
+  const [pw, setPw] = useState('');
+
+  if (pw !== 'testmikael123') {
+    return (
+      <div className="mb-6">
+        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+          Password
+        </label>
+        <input
+          className="shadow appearance-none border border-grey-500 rounded max-w-[250px] w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+          id="password"
+          type="password"
+          // placeholder="******************"
+          onChange={(e) => setPw(e.target.value)}
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="w-full h-full flex justify-center overflow-x-hidden overflow-y-auto">
       <div className="flex flex-col items-center gap-2 pt-30 z-20 md:max-w-[800px] lg:max-w-[1200px] max-w-[95%] pl-2 pr-2">
