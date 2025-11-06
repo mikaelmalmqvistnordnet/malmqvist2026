@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
       <h2 className="font-curly">Välkommen på bröllop</h2>
       <h1 className="font-professional-spaced text-4xl md:text-7xl">MIKAEL & ERIKA</h1>
       <h3 className="font-professional-spaced mt-4">25 JULI 2026</h3>
-      <nav className="pt-8 flex justify-center gap-2 items-center">
+      <nav className="pt-8 flex justify-center gap-2 items-center font-professional">
         <div
           className={`font-bold text-gray-600 text-2xl ${
             location.pathname === '/' ? 'underline' : ''
@@ -23,9 +23,7 @@ export const Header: React.FC = () => {
             location.pathname === '/osa' ? 'underline' : ''
           }`}
         >
-          <Link to="/osa" className={location.pathname === '/osa' ? 'underline' : ''}>
-            OSA
-          </Link>
+          <Link to="/osa">OSA</Link>
         </div>
         •
         <div
