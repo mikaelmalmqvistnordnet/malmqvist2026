@@ -1,5 +1,6 @@
-import { Link, useLocation } from '@tanstack/react-router';
+import { useLocation } from '@tanstack/react-router';
 import React from 'react';
+import { Link } from './Link';
 
 export const Header: React.FC = () => {
   const location = useLocation();
@@ -7,48 +8,28 @@ export const Header: React.FC = () => {
   return (
     <>
       <h2 className="font-curly">Välkommen på bröllop</h2>
-      <h1 className="font-professional-spaced text-4xl md:text-7xl">MIKAEL & ERIKA</h1>
-      <h3 className="font-professional-spaced mt-4">25 JULI 2026</h3>
-      <nav className="pt-8 flex justify-center gap-2 items-center font-professional">
-        <div
-          className={`font-bold text-gray-600 text-2xl ${
-            location.pathname === '/' ? 'underline' : ''
-          }`}
-        >
-          <Link to="/">Hem</Link>
-        </div>
+      <h1 className="font-professional-spaced text-4xl md:text-7xl">ERIKA & MIKAEL</h1>
+      <h3 className="font-professional-spaced mt-4 ">25 JULI 2026</h3>
+      <nav className="pt-8 flex justify-center gap-2 items-center flex-wrap">
+        <Link to="/" isActive={location.pathname === '/'}>
+          Hem
+        </Link>
         •
-        <div
-          className={`font-bold text-gray-600 text-2xl ${
-            location.pathname === '/osa' ? 'underline' : ''
-          }`}
-        >
-          <Link to="/osa">OSA</Link>
-        </div>
+        <Link to="/osa" isActive={location.pathname === '/osa'}>
+          OSA
+        </Link>
         •
-        <div
-          className={`font-bold text-gray-600 text-2xl ${
-            location.pathname === '/hitta-hit' ? 'underline' : ''
-          }`}
-        >
-          <Link to="/hitta-hit">Hitta hit</Link>
-        </div>
+        <Link to="/hitta-hit" isActive={location.pathname === '/hitta-hit'}>
+          Hitta hit
+        </Link>
         •
-        <div
-          className={`font-bold text-gray-600 text-2xl ${
-            location.pathname === '/kontakt' ? 'underline' : ''
-          }`}
-        >
-          <Link to="/kontakt">Kontakt</Link>
-        </div>
+        <Link to="/kontakt" isActive={location.pathname === '/kontakt'}>
+          Kontakt
+        </Link>
         •
-        <div
-          className={`font-bold text-gray-600 text-2xl ${
-            location.pathname === '/tal' ? 'underline' : ''
-          }`}
-        >
-          <Link to="/tal">Anmäl tal</Link>
-        </div>
+        <Link to="/tal" isActive={location.pathname === '/tal'}>
+          Anmäl tal
+        </Link>
       </nav>
     </>
   );
