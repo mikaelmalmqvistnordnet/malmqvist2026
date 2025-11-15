@@ -18,7 +18,7 @@ export const OSA: React.FC = () => {
                 Erika:{' '}
                 <div>
                   <span className="mr-1">📞</span>
-                  <a href="tel:0046727432007" className="font-bold underline">
+                  <a href="tel:0727432007" className="font-bold underline">
                     072-743 20 07
                   </a>
                 </div>
@@ -27,7 +27,7 @@ export const OSA: React.FC = () => {
                 Mikael:
                 <div>
                   <span className="mr-1">📞</span>
-                  <a href="tel:0046768234669" className="font-bold underline">
+                  <a href="tel:0768234669" className="font-bold underline">
                     076-823 46 69
                   </a>
                 </div>
