@@ -61,14 +61,6 @@ const Home = () => {
 
         <p>Boka boende osv</p>
       </div>
-
-      {/* <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfv9QbSk11yUum8_1eOcpPFsFW0u4oHPI5py2dKYEKijEbQxg/viewform?embedded=true"
-            width="640"
-            height="991"
-            >
-            Loading
-            </iframe> */}
     </PageWrapper>
   );
 };
