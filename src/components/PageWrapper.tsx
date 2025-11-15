@@ -5,7 +5,7 @@ import blommor2 from '../assets/blommor2.png';
 
 export const PageWrapper: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="w-full h-full flex justify-center overflow-x-hidden overflow-y-auto relative min-h-[100vh]">
+    <div className="w-full h-full flex justify-center overflow-x-hidden overflow-y-auto relative min-h-[100vh] pb-8">
       <div className="flex flex-col items-center gap-2 pt-6 md:pt-30 z-20 md:max-w-[800px] lg:max-w-[1200px] max-w-[95%] pl-2 pr-2">
         {children}
       </div>

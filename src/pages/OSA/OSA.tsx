@@ -9,8 +9,12 @@ export const OSA: React.FC = () => {
       <div className="flex flex-col gap-6 h-full items-center w-full max-w-[900px]">
         <div className="pt-2 w-full max-w-[600px] items-center flex flex-col gap-3">
           <p className="text-gray-700 text-base">
-            OSA via formuläret nedan. Om det inte skulle fungera går det bra att höra av sig
-            personligen till någon av oss via telefon eller SMS:
+            OSA via formuläret nedan eller{' '}
+            <a target="_blank" href="https://forms.gle/rzAMoUvm3PPBAdRZA" className="underline">
+              här
+            </a>
+            . Om det inte skulle fungera går det bra att höra av sig personligen till någon av oss
+            via telefon eller SMS:
           </p>
           <div className="flex items-center justify-center">
             <ul className="text-xl">
@@ -39,6 +43,7 @@ export const OSA: React.FC = () => {
           src="https://docs.google.com/forms/d/e/1FAIpQLSfv9QbSk11yUum8_1eOcpPFsFW0u4oHPI5py2dKYEKijEbQxg/viewform?embedded=true"
           width="100%"
           height="100%"
+          className="rounded-2xl min-h-[1600px]"
         >
           OSA här
         </iframe>
