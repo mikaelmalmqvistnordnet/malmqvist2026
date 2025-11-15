@@ -56,6 +56,10 @@ h3 {
   line-height: 1.5;
 }
 
+.text-base {
+  font-size: 1.1em;
+}
+
 .subtitle {
   font-size: 1.5em;
   line-height: 1;

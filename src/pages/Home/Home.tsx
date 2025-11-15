@@ -9,7 +9,7 @@ const Home = () => {
 
   if (pw !== 'testmikael123') {
     return (
-      <div className="mb-6">
+      <div className="mb-6 w-full pt-10">
         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
           Password
         </label>
@@ -28,12 +28,12 @@ const Home = () => {
       <Header />
       <div className="pt-4 md:pt-10 flex justify-center w-[400px]">
         <div className="max-w-2xs md:max-w-sm rounded-md overflow-hidden shadow-lg min-h-96 bg-gray-50 border-gray-50">
-          <img className="w-full" src={herrgarden} alt="Presteruds herrgård" />
+          <img className="w-full min-h-48 md:min-h-64" src={herrgarden} alt="Presteruds herrgård" />
           <div className="p-6">
             <div className="font-bold text-xl font-professional mb-2">
               Presteruds Herrgård Kristinehamn
             </div>
-            <p className="text-gray-700 text-base">
+            <p className="text-gray-700">
               Välkommen till vårt bröllop på Presteruds Herrgård i Kristinehamn 25 Juli 2026!
             </p>
           </div>
@@ -41,25 +41,26 @@ const Home = () => {
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
         <h4 className="font-professional-bold subtitle">Info</h4>
-        <p>Vigseln kommer äga rum utomhus, medan middagen och festen är under tak</p>
-        <p>Klädkod</p>
-        <p>Adress</p>
-        <p>Parkering finns runt herrgården</p>
+        <p className="text-base">
+          Vigseln kommer äga rum utomhus, medan middagen och festen är under tak
+        </p>
+        <p className="text-base">Klädkod</p>
+        <p className="text-base">Adress</p>
+        <p className="text-base">Parkering finns runt herrgården</p>
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
         <h4 className="font-professional-bold subtitle">För er som reser</h4>
-        <p>Åka tåg</p>
-        <p>Ta er ut till Presteruds herrgård kollektivt</p>
-        <p>Boka boende osv</p>
+        <p className="text-base">Åka tåg</p>
+        <p className="text-base">Ta er ut till Presteruds herrgård kollektivt</p>
+        <p className="text-base">Boka boende osv</p>
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
         <h4 className="font-professional-bold subtitle">Kontakt</h4>
-        <p>
+        <p className="text-base">
           Vill ni hålla tal, en presentation, ett uppträdande eller bara undrar något så kan ni
           kontakta våra toast madammes
         </p>
-
-        <p>Boka boende osv</p>
+        <p className="text-base">Boka boende osv</p>
       </div>
     </PageWrapper>
   );
