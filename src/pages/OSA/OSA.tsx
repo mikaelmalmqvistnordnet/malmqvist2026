@@ -1,6 +1,8 @@
 import React from 'react';
 import { PageWrapper } from '../../components/PageWrapper';
 import { Header } from '../../components/Header';
+import { ContactsWithTele } from '../../components/ContactsWithTele';
+import { ERIKA_CONTACT, MIKAEL_CONTACT } from '../../constants';
 
 export const OSA: React.FC = () => {
   return (
@@ -16,28 +18,7 @@ export const OSA: React.FC = () => {
             . Om det inte skulle fungera går det bra att höra av sig personligen till någon av oss
             via telefon eller SMS:
           </p>
-          <div className="flex items-center justify-center">
-            <ul className="text-xl">
-              <li className="flex justify-between gap-2">
-                Erika:{' '}
-                <div>
-                  <span className="mr-1">📞</span>
-                  <a href="tel:0727432007" className="font-bold underline">
-                    072-743 20 07
-                  </a>
-                </div>
-              </li>
-              <li className="flex justify-between gap-2">
-                Mikael:
-                <div>
-                  <span className="mr-1">📞</span>
-                  <a href="tel:0768234669" className="font-bold underline">
-                    076-823 46 69
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ContactsWithTele items={[ERIKA_CONTACT, MIKAEL_CONTACT]} />
         </div>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfv9QbSk11yUum8_1eOcpPFsFW0u4oHPI5py2dKYEKijEbQxg/viewform?embedded=true"
