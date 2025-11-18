@@ -3,6 +3,7 @@ import './Home.css';
 import herrgarden from '../../assets/herrgarden.jpg';
 import { Header } from '../../components/Header';
 import { PageWrapper } from '../../components/PageWrapper';
+import { CopyIcon } from '../../components/CopyIcon';
 
 const Home = () => {
   const [pw, setPw] = useState('');
@@ -40,27 +41,64 @@ const Home = () => {
         </div>
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
-        <h4 className="font-professional-bold subtitle">Info</h4>
+        <h3 className="font-professional-bold subtitle">Info</h3>
         <p className="text-base">
-          Vigseln kommer äga rum utomhus, medan middagen och festen är under tak
+          Om vädret tillåter hålls vigseln utomhus i trädgårdsparken. Vigseln följs av mingel där
+          det finns möjlighet att bada, paddla SUP, spela spel, dansa eller bara ta det lugnt med
+          god dryck i hand. Vad som än föredras! Middagen hålls inne i trädgårdstältet innan vi
+          framåt kvällen rör oss inåt i herrgården för efterföljande dans och fest.
         </p>
-        <p className="text-base">Klädkod</p>
-        <p className="text-base">Adress</p>
-        <p className="text-base">Parkering finns runt herrgården</p>
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
-        <h4 className="font-professional-bold subtitle">För er som reser</h4>
-        <p className="text-base">Åka tåg</p>
-        <p className="text-base">Ta er ut till Presteruds herrgård kollektivt</p>
-        <p className="text-base">Boka boende osv</p>
+        <h3 className="font-professional-bold subtitle">Klädkod: Kavaj</h3>
+        <p className="text-base">
+          Tänk ”festfin”. Kostym i valfri färg, klänning, byxdress eller blus med kjol eller byxor.
+          Eftersom vi kommer vara utomhus på en gräsmatta rekommenderas skor som inte har en alltför
+          smal klack!
+        </p>
+        <p className="text-base">
+          Hur mycket vi än önskar kan vi tyvärr inte styra över vädrets makter så ett paraply kan
+          eventuellt vara bra att ha. Ta gärna med badkläder också!
+        </p>
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
-        <h4 className="font-professional-bold subtitle">Kontakt</h4>
+        <h4 className="font-professional-bold subtitle">Boende</h4>
         <p className="text-base">
-          Vill ni hålla tal, en presentation, ett uppträdande eller bara undrar något så kan ni
-          kontakta våra toast madammes
+          Precis intill herrgården ligger campingen First Camp Herrgårdsliv med finfina stugor och
+          andra alternativ. De är alla på ca 5 minuters gångavstånd från bröllopslokalen. Boka på{' '}
+          <a
+            target="_blank"
+            href="https://firstcamp.se/destinationer/herrgardsliv-kristinehamn"
+            className="underline"
+          >
+            First Camps hemsida
+          </a>{' '}
+          och ange koden{' '}
+          <button
+            onClick={() => navigator.clipboard.writeText('EM171996')}
+            className="inline-flex items-center gap-1 font-semibold hover:cursor-pointer active:text-gray-400"
+            title="Kopiera koden"
+          >
+            EM171996 <CopyIcon />
+          </button>{' '}
+          så får ni 10% rabatt. Det finns såklart hotell och andra boendemöjligheter i Kristinehamn,
+          men vi rekommenderar starkt campingen.
         </p>
-        <p className="text-base">Boka boende osv</p>
+      </div>
+      <div className="pt-8 flex justify-center gap-2 flex-col">
+        <h4 className="font-professional-bold subtitle">Hitta hit</h4>
+        <p className="text-base">
+          <b>Bil</b>: Adressen är Presterudsallén 2, Kristinehamn. Parkering finns i anslutning till
+          herrgården.
+        </p>
+        <p className="text-base">
+          <b>Kollektivt</b>: Buss 3 avgår både från Kristinehamns Resecenter läge G och från Södra
+          Torget. Hållplats: Presterud. Följ sedan Prestrudsallén som leder till herrgården och till
+          campingreceptionen. Tidtabell och info hittas på{' '}
+          <a target="_blank" href="https://www.varmlandstrafik.se/" className="underline">
+            Värmlands trafiks hemsida
+          </a>
+        </p>
       </div>
     </PageWrapper>
   );
