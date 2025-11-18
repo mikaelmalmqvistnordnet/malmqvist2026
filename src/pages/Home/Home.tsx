@@ -44,9 +44,9 @@ const Home = () => {
         <h3 className="font-professional-bold subtitle">Info</h3>
         <p className="text-base">
           Om vädret tillåter hålls vigseln utomhus i trädgårdsparken. Vigseln följs av mingel där
-          det finns möjlighet att bada, paddla SUP, spela spel, dansa eller bara ta det lugnt med
-          god dryck i hand. Vad som än föredras! Middagen hålls inne i trädgårdstältet innan vi
-          framåt kvällen rör oss inåt i herrgården för efterföljande dans och fest.
+          det finns möjlighet att bada, spela spel, dansa eller bara ta det lugnt med god dryck i
+          hand. Vad som än föredras! Middagen hålls inne i trädgårdstältet innan vi framåt kvällen
+          rör oss inåt i herrgården för efterföljande dans och fest.
         </p>
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
