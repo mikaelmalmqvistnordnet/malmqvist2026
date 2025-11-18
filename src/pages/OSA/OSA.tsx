@@ -9,7 +9,7 @@ export const OSA: React.FC = () => {
     <PageWrapper>
       <Header />
       <div className="flex flex-col gap-6 h-full items-center w-full max-w-[900px]">
-        <div className="pt-2 w-full max-w-[600px] items-center flex flex-col gap-3">
+        <div className="w-full max-w-[600px] items-center flex flex-col gap-3">
           <p className="text-gray-700 text-base">
             OSA via formuläret nedan eller{' '}
             <a target="_blank" href="https://forms.gle/rzAMoUvm3PPBAdRZA" className="underline">
