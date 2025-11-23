@@ -1,36 +1,42 @@
 import { useState } from 'react';
 import './Home.css';
 import herrgarden from '../../assets/herrgarden.jpg';
+import ringar from '../../assets/ringar.png';
 import { Header } from '../../components/Header';
 import { PageWrapper } from '../../components/PageWrapper';
 import { CopyIcon } from '../../components/CopyIcon';
 
 const Home = () => {
-  const [pw, setPw] = useState('');
+  // const [pw, setPw] = useState('');
 
-  if (pw !== 'testmikael123') {
-    return (
-      <div className="mb-6 w-full pt-10">
-        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-          Password
-        </label>
-        <input
-          className="shadow appearance-none border border-grey-500 rounded max-w-[250px] w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-          id="password"
-          type="password"
-          onChange={(e) => setPw(e.target.value)}
-        />
-      </div>
-    );
-  }
+  // if (pw !== 'testmikael123') {
+  //   return (
+  //     <div className="mb-6 w-full pt-10">
+  //       <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+  //         Password
+  //       </label>
+  //       <input
+  //         className="shadow appearance-none border border-grey-500 rounded max-w-[250px] w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+  //         id="password"
+  //         type="password"
+  //         onChange={(e) => setPw(e.target.value)}
+  //       />
+  //     </div>
+  //   );
+  // }
 
   return (
     <PageWrapper>
       <Header />
       <div className="pt-4 md:pt-10 flex justify-center w-[400px]">
-        <div className="max-w-2xs md:max-w-sm rounded-md overflow-hidden shadow-lg min-h-96 bg-gray-50 border-gray-50">
+        <div className="max-w-2xs md:max-w-sm rounded-md overflow-hidden shadow-lg min-h-96 bg-gray-50 border-gray-50 relative">
           <img className="w-full min-h-48 md:min-h-64" src={herrgarden} alt="Presteruds herrgård" />
-          <div className="p-6">
+          <img
+            className="rounded-full border-2 border-amber-300 w-[64px] md:w-[96px] absolute left-[calc(50%-32px)] md:left-[calc(50%-48px)] md:top-[210px] top-[160px]"
+            src={ringar}
+            alt="Ringar"
+          />
+          <div className="md:p-6 md:pt-14 pt-8 p-2">
             <div className="font-bold text-xl font-professional mb-2">
               Presteruds Herrgård Kristinehamn
             </div>
@@ -42,7 +48,7 @@ const Home = () => {
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
         <h3 className="font-professional-bold subtitle">Info</h3>
-        <p className="text-base">
+        <p className="text-base md:pt-3">
           Om vädret tillåter hålls vigseln utomhus i trädgårdsparken. Vigseln följs av mingel där
           det finns möjlighet att bada, spela spel, dansa eller bara ta det lugnt med god dryck i
           hand. Vad som än föredras! Middagen hålls inne i trädgårdstältet innan vi framåt kvällen
@@ -51,7 +57,7 @@ const Home = () => {
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
         <h3 className="font-professional-bold subtitle">Klädkod: Kavaj</h3>
-        <p className="text-base">
+        <p className="text-base md:pt-3">
           Tänk ”festfin”. Kostym i valfri färg, klänning, byxdress eller blus med kjol eller byxor.
           Eftersom vi kommer vara utomhus på en gräsmatta rekommenderas skor som inte har en alltför
           smal klack!
@@ -63,7 +69,7 @@ const Home = () => {
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
         <h4 className="font-professional-bold subtitle">Boende</h4>
-        <p className="text-base">
+        <p className="text-base md:pt-3">
           Precis intill herrgården ligger campingen First Camp Herrgårdsliv med finfina stugor och
           andra alternativ. De är alla på ca 5 minuters gångavstånd från bröllopslokalen. Boka på{' '}
           <a
@@ -87,7 +93,7 @@ const Home = () => {
       </div>
       <div className="pt-8 flex justify-center gap-2 flex-col">
         <h4 className="font-professional-bold subtitle">Hitta hit</h4>
-        <p className="text-base">
+        <p className="text-base md:pt-3">
           <b>Bil</b>: Adressen är Presterudsallén 2, Kristinehamn. Parkering finns i anslutning till
           herrgården.
         </p>
