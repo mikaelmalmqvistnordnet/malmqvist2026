@@ -7,13 +7,17 @@ export const Find: React.FC = () => {
     <PageWrapper>
       <Header />
       <p className="text-base">
-        <b>Bil</b>: Adressen är Presterudsallén 2, Kristinehamn. Parkering finns i anslutning till
-        herrgården.
+        <b>Bil</b>: Adressen är{' '}
+        <a target="_blank" href="https://maps.app.goo.gl/KUMAgtJja5DVwkSx6" className="underline">
+          <address className="inline">Presterudsallén 2, Kristinehamn</address>
+        </a>
+        . Parkering finns i anslutning till herrgården.
       </p>
       <p className="text-base">
-        <b>Kollektivt</b>: Buss 3 avgår både från Kristinehamns Resecenter läge G och från Södra
-        Torget. Hållplats: Presterud. Följ sedan Prestrudsallén som leder till herrgården och till
-        campingreceptionen. Tidtabell och info hittas på{' '}
+        <b>Kollektivt</b>: Ta buss 3 från <strong>Kristinehamns Resecenter läge G</strong> eller
+        från <strong>Södra Torget</strong> till hållplats: <strong>Presterud</strong>. Följ sedan
+        Prestrudsallén som leder till herrgården och till campingreceptionen. Tidtabell och info
+        hittas på{' '}
         <a target="_blank" href="https://www.varmlandstrafik.se/" className="underline">
           Värmlands trafiks hemsida
         </a>

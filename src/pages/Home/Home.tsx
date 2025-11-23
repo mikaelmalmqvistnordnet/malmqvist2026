@@ -75,8 +75,11 @@ const Home = () => {
       <div className="pt-8 flex justify-center gap-2 flex-col">
         <h4 className="font-professional-bold subtitle">Hitta hit</h4>
         <p className="text-base md:pt-3">
-          <b>Bil</b>: Adressen är Presterudsallén 2, Kristinehamn. Parkering finns i anslutning till
-          herrgården.
+          <b>Bil</b>: Adressen är {/* https://maps.app.goo.gl/KUMAgtJja5DVwkSx6 */}
+          <a target="_blank" href="https://maps.app.goo.gl/KUMAgtJja5DVwkSx6" className="underline">
+            <address className="inline">Presterudsallén 2, Kristinehamn</address>
+          </a>
+          . Parkering finns i anslutning till herrgården.
         </p>
         <p className="text-base">
           <b>Kollektivt</b>: Buss 3 avgår både från Kristinehamns Resecenter läge G och från Södra
