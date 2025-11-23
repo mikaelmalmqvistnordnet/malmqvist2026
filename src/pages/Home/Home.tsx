@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './Home.css';
 import herrgarden from '../../assets/herrgarden.jpg';
 import ringar from '../../assets/ringar.png';
@@ -7,24 +6,6 @@ import { PageWrapper } from '../../components/PageWrapper';
 import { CopyIcon } from '../../components/CopyIcon';
 
 const Home = () => {
-  // const [pw, setPw] = useState('');
-
-  // if (pw !== 'testmikael123') {
-  //   return (
-  //     <div className="mb-6 w-full pt-10">
-  //       <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-  //         Password
-  //       </label>
-  //       <input
-  //         className="shadow appearance-none border border-grey-500 rounded max-w-[250px] w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-  //         id="password"
-  //         type="password"
-  //         onChange={(e) => setPw(e.target.value)}
-  //       />
-  //     </div>
-  //   );
-  // }
-
   return (
     <PageWrapper>
       <Header />
