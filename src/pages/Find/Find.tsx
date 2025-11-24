@@ -16,8 +16,8 @@ export const Find: React.FC = () => {
       <p className="text-base">
         <b>Kollektivt</b>: Ta buss 3 från <strong>Kristinehamns Resecenter läge G</strong> eller
         från <strong>Södra Torget</strong> till hållplats: <strong>Presterud</strong>. Följ sedan
-        Prestrudsallén som leder till herrgården och till campingreceptionen. Tidtabell och info
-        hittas på{' '}
+        Prestrudsallén som leder till herrgården och till campingreceptionen (ca 5 minuters
+        gångavstånd). Tidtabell och info hittas på{' '}
         <a target="_blank" href="https://www.varmlandstrafik.se/" className="underline">
           Värmlands trafiks hemsida
         </a>

@@ -14,9 +14,9 @@ export const OSA: React.FC = () => {
             OSA via formuläret nedan eller{' '}
             <a target="_blank" href="https://forms.gle/rzAMoUvm3PPBAdRZA" className="underline">
               här
-            </a>
-            . Om det inte skulle fungera går det bra att höra av sig personligen till någon av oss
-            via telefon eller SMS:
+            </a>{' '}
+            senast 25 april 2026. Om det inte skulle fungera går det bra att höra av sig personligen
+            till någon av oss via telefon eller SMS:
           </p>
           <ContactsWithTele items={[ERIKA_CONTACT, MIKAEL_CONTACT]} />
         </div>
