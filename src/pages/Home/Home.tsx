@@ -12,7 +12,7 @@ const Home = () => {
       <PageWrapper>
         <Header />
         <div className="pt-4 md:pt-10 flex justify-center w-[400px]">
-          <div className="max-w-2xs md:max-w-sm rounded-md overflow-hidden shadow-lg min-h-96 bg-gray-50 relative">
+          <div className="max-w-2xs md:max-w-sm rounded-md overflow-hidden shadow-lg min-h-96 bg-white relative">
             <img
               className="w-full min-h-48 md:min-h-64"
               src={herrgarden}
@@ -55,7 +55,7 @@ const Home = () => {
           </p>
         </div>
         <img
-          className="w-full rounded-md shadow-lg border-[16px] md:border-[40px] border-gray-50 md:mt-8 mt-4"
+          className="w-full rounded-md shadow-lg border-[16px] md:border-[40px] border-white md:mt-8 mt-4"
           src={vi}
           alt="vi"
         />
