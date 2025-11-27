@@ -55,10 +55,10 @@ const Home = () => {
           </p>
         </div>
         <div
-          className="w-full rounded-md shadow-lg md:mt-8 mt-4 p-4 md:p-10 z-50 relative"
+          className="w-full rounded-md shadow-lg md:mt-8 mt-4 p-4 md:p-10 z-50 relative bg-white!"
           style={{ background: 'white' }}
         >
-          <img className="rounded-sm shadow-none" src={vi} alt="vi" />
+          <img className="rounded-sm shadow-none!" src={vi} alt="vi" />
         </div>
         <div className="md:pt-8 pt-6 flex justify-center gap-2 flex-col">
           <h4 className="font-professional-bold subtitle">Boende</h4>
