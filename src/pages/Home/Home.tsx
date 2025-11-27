@@ -54,8 +54,8 @@ const Home = () => {
             eventuellt vara bra att ha. Ta gärna med badkläder också!
           </p>
         </div>
-        <div className="w-full rounded-md shadow-lg md:mt-8 mt-4 p-4 md:p-10 bg-[#fff] z-50 relative">
-          <img className="rounded-sm" src={vi} alt="vi" />
+        <div className="w-full rounded-md shadow-md md:mt-8 mt-4 px-8 py-10 md:p-10 bg-white z-50 relative">
+          <img className="rounded-sm " src={vi} alt="vi" />
         </div>
         <div className="md:pt-8 pt-6 flex justify-center gap-2 flex-col">
           <h4 className="font-professional-bold subtitle">Boende</h4>
