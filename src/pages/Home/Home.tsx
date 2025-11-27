@@ -54,7 +54,10 @@ const Home = () => {
             eventuellt vara bra att ha. Ta gärna med badkläder också!
           </p>
         </div>
-        <div className="w-full rounded-md shadow-lg md:mt-8 mt-4 p-4 md:p-10 bg-white z-50 relative">
+        <div
+          className="w-full rounded-md shadow-lg md:mt-8 mt-4 p-4 md:p-10 z-50 relative"
+          style={{ background: 'white' }}
+        >
           <img className="rounded-sm shadow-none" src={vi} alt="vi" />
         </div>
         <div className="md:pt-8 pt-6 flex justify-center gap-2 flex-col">
