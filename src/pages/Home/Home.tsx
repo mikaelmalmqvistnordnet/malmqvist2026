@@ -54,7 +54,7 @@ const Home = () => {
             eventuellt vara bra att ha. Ta gärna med badkläder också!
           </p>
         </div>
-        <div className="w-full rounded-md shadow-lg md:mt-8 mt-4 p-4 md:p-10 bg-white">
+        <div className="w-full rounded-md shadow-lg md:mt-8 mt-4 p-4 md:p-10 bg-[#fff] z-50 relative">
           <img className="rounded-sm" src={vi} alt="vi" />
         </div>
         <div className="md:pt-8 pt-6 flex justify-center gap-2 flex-col">
@@ -84,7 +84,7 @@ const Home = () => {
         <div className="md:pt-8 pt-6 flex justify-center gap-2 flex-col">
           <h4 className="font-professional-bold subtitle">Hitta hit</h4>
           <p className="text-base md:pt-3">
-            <b>Bil</b>: Adressen är
+            <b>Bil</b>: Adressen är{' '}
             <a
               target="_blank"
               href="https://maps.app.goo.gl/KUMAgtJja5DVwkSx6"

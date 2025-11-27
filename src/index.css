@@ -6,6 +6,7 @@ body {
   align-items: flex-start;
   min-width: 320px;
   min-height: 100vh;
+  color: #2a4546;
 }
 
 #root {
