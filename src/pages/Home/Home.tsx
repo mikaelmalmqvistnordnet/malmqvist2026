@@ -41,6 +41,10 @@ const Home = () => {
             hand. Vad som än föredras! Middagen hålls inne i trädgårdstältet innan vi framåt kvällen
             rör oss inåt i herrgården för efterföljande dans och fest.
           </p>
+          <p className="text-base md:pt-3">
+            För enkelhetens skull har vi avgränsat gästlistan till de namn som står på inbjudan.
+            Inbjudan gäller alltså inte +1.
+          </p>
         </div>
         <div className="md:pt-8 pt-6 flex justify-center gap-2 flex-col">
           <h3 className="font-professional-bold subtitle">Klädkod: Kavaj</h3>
@@ -102,7 +106,7 @@ const Home = () => {
             Torget. Hållplats: Presterud. Följ sedan Prestrudsallén som leder till herrgården och
             till campingreceptionen (ca 5 minuters gångavstånd). Tidtabell och info hittas på{' '}
             <a target="_blank" href="https://www.varmlandstrafik.se/" className="underline">
-              Värmlands trafiks hemsida
+              Värmlandstrafiks hemsida
             </a>
           </p>
         </div>

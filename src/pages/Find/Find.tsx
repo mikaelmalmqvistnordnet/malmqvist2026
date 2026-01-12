@@ -19,7 +19,7 @@ export const Find: React.FC = () => {
         Prestrudsallén som leder till herrgården och till campingreceptionen (ca 5 minuters
         gångavstånd). Tidtabell och info hittas på{' '}
         <a target="_blank" href="https://www.varmlandstrafik.se/" className="underline">
-          Värmlands trafiks hemsida
+          Värmlandstrafiks hemsida
         </a>
       </p>
     </PageWrapper>
